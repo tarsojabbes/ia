@@ -7,13 +7,16 @@
 .
 ├── Dados
 │   ├── 2019-05-28_portuguese_hate_speech_binary_classification.csv
-│   ├── results_data.csv
-│   ├── test_data.csv
-│   └── train_data.csv
+│   ├── results_data2.csv
+│   ├── test_data2.csv
+│   ├── custom.csv
+│   ├── custom_result.csv
+│   └── train_data2.csv
 ├── Readme.md
 ├── Scripts
 │   ├── Amostra.ipynb
 │   ├── Avaliação.ipynb
+│   ├── Bert.ipynb
 │   ├── Classificador.ipynb
 │   └── Treinamento.ipynb
 └── model
@@ -75,12 +78,7 @@ acho que o cara da redação do Enem deveria perder pontos pq não ficou claro o
 
 ```
 
-## Configuração da Máquina Utilizada para Treinamento
-
-- **Processador:** Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
-- **Memória RAM:** 32 GB (DDR4 2666MHz)
-- **GPU:** NVIDIA Geforce RTX 2080 Ti 11GB
 
 ### Tempo de Treinamento
 
-- **Duração Total:** 10 minutos e 42 segundos
+- **Duração Total:** 14 minutos
