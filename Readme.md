@@ -70,7 +70,7 @@ O dataset contém 5670 tweets escritos em Português e com a classificação ind
 ### Tamanho da Amostra
 
 - Total de amostras: 5670
-- Tamanho dos dados balanceados:
+- Tamanho da amostra após balanceamento por undersampling: 3576
   - Dados de treino: ~2000 linhas
   - Dados de teste: -500 linhas
   - Dados de avaliação: 1074 linhas
