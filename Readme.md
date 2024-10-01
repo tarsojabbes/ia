@@ -44,24 +44,25 @@ O dataset contém 5670 tweets escritos em Português e com a classificação ind
 ## Exemplos da base de dados
 
 ### Tweets com discurso de ódio
-@_iglira bom dia macaco branco haha,1
-"@_SsarahA @Ebandeira_ isso n ta errado, mas épesquisa de gente burra, a mulher trabalha menos que o homem",1
-"abri a janela tava uma gorda no apartamento da frente olhando pra baixo e chorando, acho que caiu a empadinha dela",1
-A Burra da mulher esqueceu o celular no ônibus e ta chorando aqui no busão queria não rir,1
-aff pq vc pinta o cabelo........td mundo sabe q vermelho e loiro só fica bom em tom de pele clara,1
+- @_iglira bom dia macaco branco haha
+- "@_SsarahA @Ebandeira_ isso n ta errado, mas épesquisa de gente burra, a mulher trabalha menos que o homem"
+- "abri a janela tava uma gorda no apartamento da frente olhando pra baixo e chorando, acho que caiu a empadinha dela"
+- A Burra da mulher esqueceu o celular no ônibus e ta chorando aqui no busão queria não rir
+- aff pq vc pinta o cabelo........td mundo sabe q vermelho e loiro só fica bom em tom de pele clara
 
 ### Tweets sem discurso de ódio
-@_carmeloneto Estes incompetentes não cuidam nem do povo brasileiro e nem dos poucos refugiados que aqui estão.,0
-aaaaaaa eu quero falar no meu trabalho sobre refugiados mas não sei se vou conseguir,0
-"Abaixo, apenas alguns exemplos de manifestação a favor do direito ao orgulho hetero.",0
-acho que o cara da redação do Enem deveria perder pontos pq não ficou claro o sabor do miojo,0
-@agdabritto Quero saber tudooo como foi o diaaaa!,0
+- @_carmeloneto Estes incompetentes não cuidam nem do povo brasileiro e nem dos poucos refugiados que aqui estão.
+- aaaaaaa eu quero falar no meu trabalho sobre refugiados mas não sei se vou conseguir
+- "Abaixo, apenas alguns exemplos de manifestação a favor do direito ao orgulho hetero."
+- acho que o cara da redação do Enem deveria perder pontos pq não ficou claro o sabor do miojo
+- @agdabritto Quero saber tudooo como foi o diaaaa!
 
 ### Tamanho da Amostra
 
 - Total de amostras: 5670
 - Tamanho dos dados balanceados:
-  - Dados de treino: 2502 linhas
+  - Dados de treino: ~2000 linhas
+  - Dados de teste: -500 linhas
   - Dados de avaliação: 1074 linhas
 
 
