@@ -34,25 +34,44 @@ Este projeto consiste no treinamento de um modelo de classificação para identi
 
 O dataset utilizado pode ser encontrado no Kaggle: [Brazilian Portuguese Hate Speech Dataset](https://www.kaggle.com/datasets/hrmello/brazilian-portuguese-hatespeech-dataset?resource=download)
 
+### Dataset
+
+O dataset contém 5670 tweets escritos em Português e com a classificação indicando se há ou não discurso de ódio nele. A coluna `text` é o tweet em si e `hatespeech_comb` é a label para a presença de conteúdo odioso. O dataset originalmente não estava balanceado, mas fizemos o processo de balanceamento usando undersampling.
+
+## Exemplos da base de dados
+
+### Tweets com discurso de ódio
+@_iglira bom dia macaco branco haha,1
+"@_SsarahA @Ebandeira_ isso n ta errado, mas épesquisa de gente burra, a mulher trabalha menos que o homem",1
+"abri a janela tava uma gorda no apartamento da frente olhando pra baixo e chorando, acho que caiu a empadinha dela",1
+A Burra da mulher esqueceu o celular no ônibus e ta chorando aqui no busão queria não rir,1
+aff pq vc pinta o cabelo........td mundo sabe q vermelho e loiro só fica bom em tom de pele clara,1
+
+### Tweets sem discurso de ódio
+@_carmeloneto Estes incompetentes não cuidam nem do povo brasileiro e nem dos poucos refugiados que aqui estão.,0
+aaaaaaa eu quero falar no meu trabalho sobre refugiados mas não sei se vou conseguir,0
+"Abaixo, apenas alguns exemplos de manifestação a favor do direito ao orgulho hetero.",0
+acho que o cara da redação do Enem deveria perder pontos pq não ficou claro o sabor do miojo,0
+@agdabritto Quero saber tudooo como foi o diaaaa!,0
+
 ### Tamanho da Amostra
 
 - Total de amostras: 5670
 - Tamanho dos dados balanceados:
-  - Dados de treino: 3968 linhas
-  - Dados de avaliação: 1702 linhas
-
+  - Dados de treino: 2502 linhas
+  - Dados de avaliação: 1074 linhas
 
 
 ## Métricas do Treinamento
 
 ```json
 
-  "eval_loss": 1.1703320741653442,
-  "eval_accuracy": 0.7884130982367759,
-  "eval_runtime": 8.647,
-  "eval_samples_per_second": 91.824,
-  "eval_steps_per_second": 11.565,
-  "epoch": 5.0
+ 'eval_loss': 1.455265760421753,
+ 'eval_accuracy': 0.712,
+ 'eval_runtime': 14.6547,
+ 'eval_samples_per_second': 34.119,
+ 'eval_steps_per_second': 4.299,
+ 'epoch': 5.0
 
 ```
 
