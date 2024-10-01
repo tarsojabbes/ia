@@ -1,5 +1,6 @@
-
 # Treinamento de um Modelo para Classificação de Tweets com Discursos de Ódio
+
+Membros: Lucas de Medeiros Soares, João Henrique Almeida Xavier e Tarso Jabbes Lima de Oliveira
 
 ## Estrutura do Projeto
 
@@ -33,6 +34,15 @@
 
 Este projeto consiste no treinamento de um modelo de classificação para identificar tweets com discursos de ódio em português. Utilizando o dataset disponibilizado no Kaggle, realizamos o fine-tuning do modelo `neuralmind/bert-base-portuguese-cased` para melhorar sua performance nesta tarefa específica.
 
+## Ordem dos Notebooks
+
+Para entender o projeto, a ordem do desenvolvimento foi:
+1. Amostra.ipynb: contém os códigos necessário para tratar nossa amostra de dados, bem como dividí-la em treino/teste/avaliação.
+2. Bert.ipynb: contém o código que avalia como o BERTimbau performa sem o fine tuning.
+3. Treinamento.ipynb: contém o código que realiza o fine tuning do BERTimbau e verifica sua acurácia
+4. Classificador.ipynb: contém o código que rotula nosso dataset de avaliação, e verifica a acurácia para tweets customizados que criamos
+5. Avaliacao.ipynb: contém o código que verifica a acurária para nosso dataset de avaliação e monta a matriz de confusão
+
 ### Link do Dataset
 
 O dataset utilizado pode ser encontrado no Kaggle: [Brazilian Portuguese Hate Speech Dataset](https://www.kaggle.com/datasets/hrmello/brazilian-portuguese-hatespeech-dataset?resource=download)
@@ -64,6 +74,31 @@ O dataset contém 5670 tweets escritos em Português e com a classificação ind
   - Dados de treino: ~2000 linhas
   - Dados de teste: -500 linhas
   - Dados de avaliação: 1074 linhas
+
+
+## Nosso dataset customizado
+| query | label|
+|--|--|
+Essas pessoas só sabem reclamar. Não deveriam nem estar aqui bando de pretos.|1
+Sempre a mesma coisa com esse grupo. Eles são a vergonha do país odeio esses nordestinos que não sabem votar!,|1
+Esses incompetentes só atrapalham. Não servem pra nada!|1
+Não acredito que deixam esse tipo de gente ter voz. É ridículo!|1
+Gente assim deveria ser expulsa daqui. Não merecem estar entre nós.|1
+O problema da nação é mulher que não sabe de nada e opina em tudo. Por que não resolvem isso logo?|1
+Se esse grupo sumisse o mundo seria bem melhor quem suporta essa cabeça de caixa dagua|1
+O que esperar desse tipo de pessoa? Só sabem destruir tudo.|1
+Esses preguiçosos vivem às custas dos outros e do bolsa familia que lula manda. Lamentável!|1
+Pessoas assim não têm lugar na nossa sociedade. Um absurdo total!|1
+Eu realmente acredito que podemos construir um mundo melhor juntos.|0
+É incrível como a diversidade faz a vida mais rica e interessante|0
+Precisamos de mais amor e respeito no mundo. Tudo começa com empatia|0
+Cada pessoa tem algo único a oferecer. Vamos valorizar isso|0
+Admiro como algumas pessoas são resilientes e enfrentam os desafios|0
+O importante é sempre procurar aprender com as diferenças|0
+Devemos nos unir para criar uma sociedade mais justa e acolhedora|0
+Nada supera o poder da gentileza. Pequenos gestos fazem a diferença|0
+A troca de ideias é o que nos faz crescer como sociedade. Vamos dialogar mais|0
+A empatia e o respeito são fundamentais para um convívio saudável|0
 
 
 ## Métricas do Treinamento
